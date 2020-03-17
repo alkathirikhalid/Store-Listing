@@ -1,7 +1,5 @@
 package com.alkathirikhalid.storelisting.data.rest;
 
-import android.database.Observable;
-
 import com.alkathirikhalid.storelisting.BuildConfig;
 import com.alkathirikhalid.storelisting.data.remote.request.body.ListingRequestBody;
 import com.alkathirikhalid.storelisting.data.remote.request.body.ListingUpdateRequestBody;
@@ -13,6 +11,7 @@ import com.alkathirikhalid.storelisting.util.Constant;
 
 import java.util.concurrent.TimeUnit;
 
+import io.reactivex.Observable;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;

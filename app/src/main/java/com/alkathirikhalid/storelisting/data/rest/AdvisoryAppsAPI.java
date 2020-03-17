@@ -1,12 +1,11 @@
 package com.alkathirikhalid.storelisting.data.rest;
 
-import android.database.Observable;
-
 import com.alkathirikhalid.storelisting.data.remote.response.body.ListingResponseBody;
 import com.alkathirikhalid.storelisting.data.remote.response.body.ListingUpdateResponseBody;
 import com.alkathirikhalid.storelisting.data.remote.response.body.LoginResponseBody;
 import com.alkathirikhalid.storelisting.util.Constant;
 
+import io.reactivex.Observable;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
@@ -20,7 +19,7 @@ import retrofit2.http.Query;
 public interface AdvisoryAppsAPI {
     @FormUrlEncoded
     @POST(Constant.APIEndPoint.LOGIN)
-    Observable<LoginResponseBody>
+    io.reactivex.Observable<LoginResponseBody>
     login(@Field("email") String email, @Field("password") String password);
 
     @GET(Constant.APIEndPoint.LISTING)
