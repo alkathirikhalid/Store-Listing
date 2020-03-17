@@ -1,10 +1,11 @@
-package com.alkathirikhalid.storelisting;
+package com.alkathirikhalid.storelisting.ui;
 
 import android.os.Bundle;
 
-import androidx.appcompat.app.AppCompatActivity;
+import com.alkathirikhalid.storelisting.R;
+import com.alkathirikhalid.storelisting.base.BaseView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseView {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
