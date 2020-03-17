@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Store Listing</string>
+    <!-- Filter -->
+    <string name="scheme">https</string>
+    <string name="host">www.alkathirikhalid.com</string>
+    <string name="pathPrefix">/storelisting</string>
 </resources>
