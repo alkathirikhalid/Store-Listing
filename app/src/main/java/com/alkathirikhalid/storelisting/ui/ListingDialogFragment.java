@@ -23,9 +23,9 @@ import butterknife.ButterKnife;
  * Store Listing.
  */
 public class ListingDialogFragment extends AppCompatDialogFragment {
-    public static String KEY_ID = "EXTRA_KEY_ID";
-    public static String KEY_LIST_NAME = "EXTRA_KEY_LIST_NAME";
-    public static String KEY_DISTANCE = "EXTRA_KEY_DISTANCE";
+    private static String KEY_ID = "EXTRA_KEY_ID";
+    private static String KEY_LIST_NAME = "EXTRA_KEY_LIST_NAME";
+    private static String KEY_DISTANCE = "EXTRA_KEY_DISTANCE";
     @BindView(R.id.et_update_id)
     EditText et_update_id;
     @BindView(R.id.et_update_name)
@@ -81,7 +81,7 @@ public class ListingDialogFragment extends AppCompatDialogFragment {
         et_update_distance.setText(distance);
     }
 
-    void update() {
+    private void update() {
         if ("".equals(et_update_id.getText().toString()) || "".equals(et_update_name.getText().toString()) || "".equals(et_update_distance.getText().toString())) {
             ((BaseView) getActivity()).showMessage(getString(R.string.all_values_required));
         } else {

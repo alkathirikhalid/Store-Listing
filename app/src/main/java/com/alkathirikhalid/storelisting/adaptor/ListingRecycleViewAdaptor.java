@@ -22,7 +22,7 @@ import butterknife.ButterKnife;
  * Store Listing.
  */
 public class ListingRecycleViewAdaptor extends RecyclerView.Adapter<ListingRecycleViewAdaptor.ListingRecycleViewHolder> {
-    ListingListener listingListener;
+    private ListingListener listingListener;
     private ArrayList<Listing> listings;
     private int selectedItem = -1;
 
@@ -64,7 +64,7 @@ public class ListingRecycleViewAdaptor extends RecyclerView.Adapter<ListingRecyc
         @BindView(R.id.tv_listing_item)
         TextView tv_listing_item;
 
-        public ListingRecycleViewHolder(@NonNull View itemView) {
+        ListingRecycleViewHolder(@NonNull View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);
             itemView.setOnClickListener(new View.OnClickListener() {
