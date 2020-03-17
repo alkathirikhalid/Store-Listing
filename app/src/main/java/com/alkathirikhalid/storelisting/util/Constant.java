@@ -6,7 +6,7 @@ package com.alkathirikhalid.storelisting.util;
  */
 public class Constant {
     public static final class APIConfig {
-        public static final int CONNECTION_TIMEOUT_SEC = 15;
+        public static final int CONNECTION_TIMEOUT_SEC = 10;
         public static final String BASE_URL = "https://interview.advisoryapps.com/";
     }
 

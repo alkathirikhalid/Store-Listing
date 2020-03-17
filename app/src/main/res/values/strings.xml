@@ -12,4 +12,13 @@
     <string name="loading">Loading</string>
     <string name="email_required">Email Required!</string>
     <string name="password_required">Password Required!</string>
+    <!-- Listing -->
+    <string name="listing">Listing</string>
+    <string name="logout">Logout</string>
+    <!-- Update -->
+    <string name="id">ID</string>
+    <string name="name">Name</string>
+    <string name="distance">Distance</string>
+    <string name="update">Update</string>
+    <string name="all_values_required">All values Required!</string>
 </resources>

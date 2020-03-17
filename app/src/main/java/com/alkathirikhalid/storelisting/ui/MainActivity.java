@@ -1,5 +1,6 @@
 package com.alkathirikhalid.storelisting.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -74,7 +75,8 @@ public class MainActivity extends BaseView {
     }
 
     void goToListing() {
-        // TODO Go To Listing
+        Intent intent = new Intent(this, ListingActivity.class);
+        startActivity(intent);
         finish();
     }
 

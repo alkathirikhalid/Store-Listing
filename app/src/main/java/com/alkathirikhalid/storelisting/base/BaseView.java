@@ -39,7 +39,7 @@ public abstract class BaseView extends AppCompatActivity {
         compositeDisposable.clear();
     }
 
-    protected void showMessage(String message) {
+    public void showMessage(String message) {
         Toast.makeText(this, message, Toast.LENGTH_LONG).show();
     }
 
